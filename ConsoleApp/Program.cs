@@ -154,6 +154,11 @@ namespace ConsoleApp
                 return ac < bc ? a : b;
         }
 
+        static int myFunc(int a)
+        {
+            return a > 10 && 100 < a ? a : 0;
+        }
+
         static bool reachNextLevel(int experience, int threshold, int reward)
         {
             return experience+reward>=threshold;
